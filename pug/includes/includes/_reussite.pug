@@ -1,0 +1,37 @@
+- 
+    const etudiantsList = [
+            {
+            'identite': 'Chaina B.',
+            'age': '22 ans',
+            'formation': 'prépare un Bachelor chargée de clientèles en Assurance et Banque avec Ecosup Assurance',
+            'apprentissage': 'a signé son Alternance : Conseillère clientèle chez notre partenaire Crédit Agricole Assurance',
+            'image' : 'https://i.ibb.co/7JPr3Kk/Girl04-Assurance.png'
+        },
+
+             {
+            'identite': 'Maki T.',
+            'age': '28 ans',
+            'formation': 'prépare un BTS Assurance avec Ecosup Assurance',
+            'apprentissage': 'a signé son Alternance : Gestionnaire de production chez notre partenaire SMA BTP',
+            'image': 'https://i.ibb.co/cgf0TpB/Boy04-Assurance.png'
+        },
+
+            {
+            'identite': 'Léa C.',
+            'age': '21 ans',
+            'formation': 'prépare un BTS Assurance avec Ecosup Assurance',
+            'apprentissage': 'a signé son Alternance : Chargée de clientèle chez notre partenaire Agence AXA Assurance',
+            'image': 'https://i.ibb.co/7JPr3Kk/Girl04-Assurance.png'
+        }
+    ]
+
+mj-section(background-color='#ffffff')
+    mj-column(width='500px')
+        mj-text(font-size='16px' font-weight='900' line-height='20px' text-transform='uppercase' color='#2D3748') Ils ont décroché leur alternance
+        mj-text(font-size='16px' font-weight='400' line-height='20px' color='#2D3748')
+            each etudiant in etudiantsList
+                ul(style='margin:0;list-style-type:none;padding:0;')
+                    li #[img(width='40px' src= etudiant.image alt='portrait stylisé étudiant(e)')/]
+                    li #[span(style='font-weight:900;color:#684092;')= etudiant.identite] #[span= etudiant.age]
+                    li= etudiant.formation
+                    li(style='padding-bottom:10px;')= etudiant.apprentissage
