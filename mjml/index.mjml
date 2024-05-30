@@ -64,7 +64,7 @@
     </mj-section>
     <mj-section background-color="#ffffff" padding="0">
       <mj-column width="500px">
-        <mj-button css-class="hover" href="https://ecosup-assurance.fr/gestionnaire-negociateur-sinistres/">Postuler Maintenant</mj-button>
+        <mj-button css-class="hover" href="https://ecosup-assurance.fr/gestionnaire-indemnisation/">Postuler Maintenant</mj-button>
       </mj-column>
     </mj-section>
     <mj-section background-color="#ffffff" padding-bottom="0">
